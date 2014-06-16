@@ -5,7 +5,6 @@ module Rulers
         env["PATH_INFO"].split('/', 4)
       cont = cont.capitalize
       cont += "Controller"
-
       [Object.const_get(cont), action]
     end
   end
